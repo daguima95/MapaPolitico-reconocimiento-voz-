@@ -1,0 +1,9 @@
+C:\Users\Usuario\Downloads\REcoSample\REcoSample\bin\Debug\REcoSample.exe.config
+C:\Users\Usuario\Downloads\REcoSample\REcoSample\bin\Debug\REcoSample.exe
+C:\Users\Usuario\Downloads\REcoSample\REcoSample\bin\Debug\REcoSample.pdb
+C:\Users\Usuario\Downloads\REcoSample\REcoSample\obj\Debug\REcoSample.csprojAssemblyReference.cache
+C:\Users\Usuario\Downloads\REcoSample\REcoSample\obj\Debug\REcoSample.Form1.resources
+C:\Users\Usuario\Downloads\REcoSample\REcoSample\obj\Debug\REcoSample.Properties.Resources.resources
+C:\Users\Usuario\Downloads\REcoSample\REcoSample\obj\Debug\REcoSample.csproj.GenerateResource.cache
+C:\Users\Usuario\Downloads\REcoSample\REcoSample\obj\Debug\REcoSample.exe
+C:\Users\Usuario\Downloads\REcoSample\REcoSample\obj\Debug\REcoSample.pdb
