@@ -62,8 +62,13 @@ namespace MapaPolitico
             Choices mapChoice = new Choices();
 
             SemanticResultValue choiceResultValue =
-                new SemanticResultValue("Comunidad Valenciana", MapaPolitico.Properties.Resources.ComunidadValenciana);
+                new SemanticResultValue("Blanco", MapaPolitico.Properties.Resources.mapaBlanco);
             GrammarBuilder resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Comunidad Valenciana", MapaPolitico.Properties.Resources.ComunidadValenciana);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
             mapChoice.Add(resultValueBuilder);
 
             choiceResultValue =
