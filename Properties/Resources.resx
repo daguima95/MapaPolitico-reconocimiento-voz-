@@ -118,10 +118,58 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Andalucia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Andalucia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aragon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aragon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Asturias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Asturias.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Baleares" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Baleares.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Canarias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Canarias.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cantabria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cantabria.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CastillaLaMancha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CastillaLaMancha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CastillaLeon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CastillaLeon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Catalunya" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Catalunya.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ComunidadValenciana" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ComunidadValenciana.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Extremadura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Extremadura.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Galicia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Galicia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaRioja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaRioja.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Madrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Madrid.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mapaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mapaBlanco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Murcia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Murcia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Navarra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Navarra.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaisVasco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaisVasco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

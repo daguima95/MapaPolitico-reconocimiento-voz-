@@ -105,7 +105,55 @@
     <None Include="Resources\mapaBlanco.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Andalucia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aragon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asturias.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Baleares.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Canarias.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cantabria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CastillaLaMancha.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CastillaLeon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Catalunya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\ComunidadValenciana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Extremadura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Galicia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaRioja.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Madrid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Murcia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navarra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaisVasco.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -17,11 +17,8 @@ namespace MapaPolitico
      private System.Speech.Recognition.SpeechRecognitionEngine _recognizer = 
         new SpeechRecognitionEngine();
         private SpeechSynthesizer synth = new SpeechSynthesizer();
-        
-        public Form1()
-        {
-            InitializeComponent();
-        }
+
+        public Form1() => InitializeComponent();
 
 
         private void Form1_Load(object sender, EventArgs e)
@@ -34,12 +31,10 @@ namespace MapaPolitico
             grammar.Enabled = true;
             _recognizer.LoadGrammar(grammar);
             _recognizer.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(_recognizer_SpeechRecognized);
-            //reconocimiento asincrono y mutiples veces
             _recognizer.RecognizeAsync(RecognizeMode.Multiple);
             
-          // this.BackgroundImage = MapaPolitico.Properties.Resources.mapaBlanco;
             
-            synth.Speak("Aplicación preparada para reconocer su voz");
+            synth.Speak("Aplicacion preparada para reconocer su voz");
 
          }
 
@@ -47,23 +42,18 @@ namespace MapaPolitico
 
         void _recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
-                      //obtenemos un diccionario con los elementos sematicos
-                      SemanticValue semantics = e.Result.Semantics;
-          
-                      string rawText = e.Result.Text;
-                      RecognitionResult result = e.Result;
+            SemanticValue semantics = e.Result.Semantics;        
+            RecognitionResult result = e.Result;
 
-                      if (!semantics.ContainsKey("rgb"))
-                      {
-                          this.label1.Text = "No info provided.";
-                      }
-                      else
-                      {
-                          this.label1.Text = rawText;
-                          this.BackColor = Color.FromArgb((int)semantics["rgb"].Value);
-                          Update();
-                          synth.Speak(rawText);
-                      }
+            if (!semantics.ContainsKey("mapChoice"))
+            {
+                synth.Speak("No existe");
+            }
+            else
+            {
+                this.BackgroundImage = Image.FromFile(semantics["mapChoice"].Value.ToString());
+                Update();
+            }
         }
 
 
@@ -76,6 +66,86 @@ namespace MapaPolitico
             GrammarBuilder resultValueBuilder = new GrammarBuilder(choiceResultValue);
             mapChoice.Add(resultValueBuilder);
 
+            choiceResultValue =
+                new SemanticResultValue("Andalucia", MapaPolitico.Properties.Resources.Andalucia);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Aragon", MapaPolitico.Properties.Resources.Aragon);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Asturias", MapaPolitico.Properties.Resources.Asturias);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Baleares", MapaPolitico.Properties.Resources.Baleares);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Canarias", MapaPolitico.Properties.Resources.Canarias);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Cantabria", MapaPolitico.Properties.Resources.Cantabria);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Castilla la Mancha", MapaPolitico.Properties.Resources.CastillaLaMancha);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Castilla leon", MapaPolitico.Properties.Resources.CastillaLeon);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Catalunya", MapaPolitico.Properties.Resources.Catalunya);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Extremadura", MapaPolitico.Properties.Resources.Extremadura);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Galicia", MapaPolitico.Properties.Resources.Galicia);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("La Rioja", MapaPolitico.Properties.Resources.LaRioja);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Madrid", MapaPolitico.Properties.Resources.Madrid);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Murcia", MapaPolitico.Properties.Resources.Murcia);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Navarra", MapaPolitico.Properties.Resources.Navarra);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
+            choiceResultValue =
+                new SemanticResultValue("Pais Vasco", MapaPolitico.Properties.Resources.PaisVasco);
+            resultValueBuilder = new GrammarBuilder(choiceResultValue);
+            mapChoice.Add(resultValueBuilder);
+
             SemanticResultKey choiceResultKey = new SemanticResultKey("map", mapChoice);
             GrammarBuilder mapas = new GrammarBuilder(choiceResultKey);
 
@@ -86,48 +156,10 @@ namespace MapaPolitico
             GrammarBuilder frase = new GrammarBuilder(dos_alternativas);
             Grammar grammar = new Grammar(frase);
             grammar.Name = "Pintar/Colorear";
+
             return grammar;
+
         }
-      
-      /*  private Grammar CreateGrammarBuilderRGBSemantics2(params int[] info)
-        {
-            synth.Speak("Creando ahora la gramática");
-            Choices colorChoice = new Choices();
-   
-            SemanticResultValue choiceResultValue =
-                    new SemanticResultValue("Rojo", Color.FromName("Red").ToArgb());
-            GrammarBuilder resultValueBuilder = new GrammarBuilder(choiceResultValue);
-            colorChoice.Add(resultValueBuilder);
-            
-            choiceResultValue =
-                   new SemanticResultValue("Azul", Color.FromName("Blue").ToArgb());
-            resultValueBuilder = new GrammarBuilder(choiceResultValue);
-            colorChoice.Add(resultValueBuilder);
-            
-            choiceResultValue =
-                   new SemanticResultValue("Verde", Color.FromName("Green").ToArgb());
-            resultValueBuilder = new GrammarBuilder(choiceResultValue);
-            colorChoice.Add(resultValueBuilder);
-
-            SemanticResultKey choiceResultKey = new SemanticResultKey("rgb", colorChoice);
-            GrammarBuilder colores = new GrammarBuilder(choiceResultKey);
-
-
-            GrammarBuilder poner= "Poner";
-            GrammarBuilder cambiar ="Cambiar";
-            GrammarBuilder fondo = "Fondo";
-
-            Choices dos_alternativas = new Choices(poner, cambiar);
-            GrammarBuilder frase = new GrammarBuilder(dos_alternativas);
-            frase.Append(fondo);
-            frase.Append(colores);
-            Grammar grammar = new Grammar(frase);
-            grammar.Name = "Poner/Cambiar Fondo";
-            return grammar;
-
-
-       
-        }*/
 
     }
 }
